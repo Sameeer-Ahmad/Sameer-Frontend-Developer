@@ -1,16 +1,17 @@
 import Navbar from "./Navbar";
 import LandingPageVideo from "../assets/video/LandingPageVideo.mp4";
+import React from "react";
 
-const HeroSection = () => {
+const HeroSection: React.FC  = () => {
   return (
     <div className="relative w-full h-[700px] overflow-hidden">
-      {/* <video
+      <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={LandingPageVideo}
         autoPlay
         loop
         muted
-      /> */}
+      />
 
       <div className="relative z-30">
         <Navbar />
