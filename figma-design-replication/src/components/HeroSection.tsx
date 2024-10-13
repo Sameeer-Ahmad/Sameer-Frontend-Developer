@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroSection: React.FC  = () => {
   return (
-    <div className="relative w-full h-[700px] overflow-hidden">
+    <div className="relative w-full h-[700px] overflow-hidden ">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={LandingPageVideo}
