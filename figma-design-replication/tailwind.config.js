@@ -15,6 +15,8 @@ export default {
         logoBg2: "rgba(26, 222, 245, 1)",
         squareBorder: "rgba(14, 139, 154, 1)",
         squareColor: "rgba(21, 182, 201, 1)",
+        AboutEthAiColor: "rgba(8, 37, 42, 1)",
+        logoColor: "rgba(97, 240, 254, 1)",
       },
       fontFamily: {
         space: ["Space Grotesk", "sans-serif"],
@@ -22,7 +24,7 @@ export default {
       },
       screens: {
         "custom-lg": "900px",
-        "custom-md": "1120px",
+        "custom-md": "1140px",
         "custom-xl": "1440px",
         // "custom-sm": "425px",
       },

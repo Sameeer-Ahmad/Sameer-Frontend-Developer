@@ -1,3 +1,4 @@
+import AboutEthAi from "./AboutEthAi";
 import Features from "./Feature";
 import HeroSection from "./HeroSection";
 
@@ -6,6 +7,7 @@ const LandingPage = () => {
         <div className="bg-black">
           <HeroSection/>
            <Features/>
+           <AboutEthAi/>
         </div>
     );
 };

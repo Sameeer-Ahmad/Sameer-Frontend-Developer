@@ -3,7 +3,7 @@ import "./Feature.css";
 
 const Features: React.FC = () => {
   return (
-    <div className="flex flex-col item-center justify-center h-[832px] mt-[70px] sm:h-[auto] hidden sm:block custom-sm:hidden">
+    <div className="flex flex-col item-center justify-center h-[832px] mt-[70px] sm:h-[auto] hidden sm:hideen">
      <div className="container m-auto ">
         <div
           className="box rounded-tl-[56px] rounded-tr-[16px] rounded-br-[16px] rounded-bl-[16px] bg-navColor border-1 border-navBorder p-4" // Added padding
@@ -98,13 +98,3 @@ const Features: React.FC = () => {
 
 export default Features;
 
-// <div className="relative flex flex-col items-center justify-center">
-{
-  /* Outer Box */
-}
-// <div className="absolute w-[100px] h-[100px] top-[91px] left-[50%] transform -translate-x-1/2 gap-0 rounded-[16px] bg-squareColor border-[6px] border-squareBorder">
-//   {/* Inner Box */}
-//   <div className="absolute w-[53px] h-[44px] top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rounded-[8px] gap-3 border-white border-[2px]">
-//     {/* Inner content can go here */}
-//   </div>
-// </div>
