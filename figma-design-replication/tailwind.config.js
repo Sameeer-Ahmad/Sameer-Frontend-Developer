@@ -13,6 +13,8 @@ export default {
         dAppBorder: "rgba(139,249,232,0.2)",
         logoBg1: "rgba(30, 128, 140, 1)",
         logoBg2: "rgba(26, 222, 245, 1)",
+        squareBorder: "rgba(14, 139, 154, 1)",
+        squareColor: "rgba(21, 182, 201, 1)",
       },
       fontFamily: {
         space: ["Space Grotesk", "sans-serif"],
@@ -20,6 +22,9 @@ export default {
       },
       screens: {
         "custom-lg": "900px",
+        "custom-md": "1120px",
+        "custom-xl": "1440px",
+        // "custom-sm": "425px",
       },
     },
   },
