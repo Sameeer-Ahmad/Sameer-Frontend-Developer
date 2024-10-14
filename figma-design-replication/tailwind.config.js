@@ -19,7 +19,7 @@ export default {
         logoColor: "rgba(97, 240, 254, 1)",
         donutcolor1: "rgba(24, 110,118, 1)",
         donutcolor2: "rgba(10, 153, 166, 1)",
-
+        footerBg: "rgba(1, 15, 20, 1)",
       },
       fontFamily: {
         space: ["Space Grotesk", "sans-serif"],

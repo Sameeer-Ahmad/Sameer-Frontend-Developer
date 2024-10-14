@@ -11,8 +11,7 @@ import {
 import React from "react";
 
 const Faq: React.FC = () => {
-
-    const faqs = [
+  const faqs = [
     {
       title: "What is EthAi?",
       content:
@@ -39,19 +38,25 @@ const Faq: React.FC = () => {
   ];
 
   return (
-    <Box color={"white"} h={"600px"}>
-     
-      <Flex justify="center" align={{ base: "center", md: "center" }} h="100%" direction={{ base: "column", md: "row" }} >
-       
+    <Box color={"white"} h={"500px"}>
+      <Flex
+        justify="center"
+        align={{ base: "center", md: "center" }}
+        h="100%"
+        direction={{ base: "column", md: "row" }}
+      >
         <Box
           width={{ base: "100%", md: "50%" }}
           display="flex"
           justifyContent="center"
           alignItems="center"
           height="40%"
-          
         >
-          <Text className="font-space font-normal" fontSize="36px" ml={[16, 0, 20, 12]} >
+          <Text
+            className="font-space font-normal"
+            fontSize="36px"
+            ml={[16, 0, 20, 12]}
+          >
             Frequently Asked Questions
           </Text>
         </Box>
@@ -73,21 +78,34 @@ const Faq: React.FC = () => {
                         {/* Flex container for icon and title */}
                         <Flex align="center" width="100%">
                           {/* Left-aligned icon */}
-                          <Box className="text-navBorder">
+                          <Box className="text-fontColor">
                             {isExpanded ? (
-                              <MinusIcon fontSize="12px"  />
+                              <MinusIcon fontSize="12px" />
                             ) : (
                               <AddIcon fontSize="12px" />
                             )}
                           </Box>
                           {/* Title of the accordion section */}
-                          <Box as="span" flex="1" textAlign="left" ml={2} className="font-space font-normal text-[16px]">
+                          <Box
+                            as="span"
+                            flex="1"
+                            textAlign="left"
+                            ml={2}
+                            className="font-space font-normal text-[16px]"
+                          >
                             {faq.title}
                           </Box>
                         </Flex>
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel fontWeight={"400"} fontSize={"16px"}  pb={4} className="font-space font-normal text-[16px]">{faq.content}</AccordionPanel>
+                    <AccordionPanel
+                      fontWeight={"400"}
+                      fontSize={"16px"}
+                      pb={4}
+                      className="font-space font-normal text-[16px]"
+                    >
+                      {faq.content}
+                    </AccordionPanel>
                   </>
                 )}
               </AccordionItem>

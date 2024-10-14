@@ -12,7 +12,6 @@
   max-width: 400px;
 }
 
-
 #box1 {
   grid-column: 1;
   grid-row: 1 / 4;
@@ -43,8 +42,6 @@
   grid-row: 4;
 }
 
-
-
 @media (max-width: 1024px) {
   .container {
     grid-template-columns: repeat(4, 200px);
@@ -52,47 +49,41 @@
   }
 }
 
-
 @media (max-width: 424px) {
-    .container {
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: space-between; 
-        gap: 10px; 
-        height: auto;
-      }
-    
-      .box {
-        flex: 1 1 calc(50% - 10px);
-        max-width: calc(50% - 10px); 
-      }
-}
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    height: auto;
+  }
 
+  .box {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
 
 @media (max-width: 768px) {
   .about {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
-  .main{
-    width:90%;
-   
+  .main {
+    width: 90%;
   }
-  .smallBox{
+  .smallBox {
     box-sizing: border-box;
     width: full;
-    
   }
-  .tokenomicsData{
+  .tokenomicsData {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
-  .blockchain{
-    width: full
-    
-    
+  .blockchain {
+    width: full;
   }
 }
