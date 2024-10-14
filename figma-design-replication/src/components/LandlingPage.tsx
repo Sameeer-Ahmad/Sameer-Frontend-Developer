@@ -1,4 +1,5 @@
 import AboutEthAi from "./AboutEthAi";
+import Faq from "./FAQ";
 import Features from "./Feature";
 import HeroSection from "./HeroSection";
 import Roadmap from "./Roadmap";
@@ -12,6 +13,7 @@ const LandingPage = () => {
            <AboutEthAi/>
            <Tokenomics/>
            <Roadmap/>
+           <Faq/>
         </div>
     );
 };
