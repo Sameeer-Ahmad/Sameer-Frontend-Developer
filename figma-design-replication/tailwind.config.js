@@ -17,6 +17,9 @@ export default {
         squareColor: "rgba(21, 182, 201, 1)",
         AboutEthAiColor: "rgba(8, 37, 42, 1)",
         logoColor: "rgba(97, 240, 254, 1)",
+        donutcolor1: "rgba(24, 110,118, 1)",
+        donutcolor2: "rgba(10, 153, 166, 1)",
+
       },
       fontFamily: {
         space: ["Space Grotesk", "sans-serif"],
@@ -26,7 +29,7 @@ export default {
         "custom-lg": "900px",
         "custom-md": "1140px",
         "custom-xl": "1440px",
-        // "custom-sm": "425px",
+        "custom-sm": "425px",
       },
     },
   },

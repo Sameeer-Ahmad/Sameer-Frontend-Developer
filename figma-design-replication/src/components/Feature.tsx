@@ -3,7 +3,7 @@ import "./Feature.css";
 
 const Features: React.FC = () => {
   return (
-    <div className="flex flex-col item-center justify-center h-[832px] mt-[70px] sm:h-[auto] hidden sm:hideen">
+    <div className="flex flex-col item-center justify-center h-[832px] mt-[70px] sm:h-[auto] hidden sm:hidden lg:block md:block">
      <div className="container m-auto ">
         <div
           className="box rounded-tl-[56px] rounded-tr-[16px] rounded-br-[16px] rounded-bl-[16px] bg-navColor border-1 border-navBorder p-4" // Added padding
