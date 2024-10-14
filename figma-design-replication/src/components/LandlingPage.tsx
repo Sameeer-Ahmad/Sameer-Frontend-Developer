@@ -1,6 +1,7 @@
 import AboutEthAi from "./AboutEthAi";
 import Features from "./Feature";
 import HeroSection from "./HeroSection";
+import Tokenomics from "./Tokenomics";
 
 const LandingPage = () => {
     return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
           <HeroSection/>
            <Features/>
            <AboutEthAi/>
+           <Tokenomics/>
         </div>
     );
 };

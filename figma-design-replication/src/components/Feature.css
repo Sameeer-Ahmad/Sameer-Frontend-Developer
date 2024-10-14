@@ -44,6 +44,7 @@
 }
 
 
+
 @media (max-width: 1024px) {
   .container {
     grid-template-columns: repeat(4, 200px);
@@ -80,6 +81,18 @@
   .smallBox{
     box-sizing: border-box;
     width: full;
+    
+  }
+  .tokenomicsData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .blockchain{
+    width: full
+    
     
   }
 }
