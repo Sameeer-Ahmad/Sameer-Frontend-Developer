@@ -3,8 +3,8 @@ import "./Feature.css";
 const Tokenomics: React.FC = () => {
   return (
     <>
-      <div className="h-[894px] mt-[50px]">
-        <p className="text-white font-space text-[40px] font-medium text-center mb-[20px]">
+      <div className="h-[832px] md:h-[532px] max-h-[832px] mt-[50px]">
+        <p className="text-white font-space text-[40px] font-medium text-center ">
           Tokenomics
         </p>
 
