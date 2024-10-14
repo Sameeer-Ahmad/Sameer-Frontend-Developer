@@ -3,7 +3,7 @@ import { BiBarChart } from "react-icons/bi";
 import { FaScrewdriverWrench } from "react-icons/fa6";
 import { MdAccountBalanceWallet } from "react-icons/md";
 import { RiRobot2Fill } from "react-icons/ri";
-import "./Feature.css"
+import "./Feature.css";
 const AboutEthAi: React.FC = () => {
   return (
     <>
@@ -57,7 +57,6 @@ const AboutEthAi: React.FC = () => {
               </p>
             </div>
 
-            {/* Section 2 */}
             <div className="flex flex-col items-start justify-start lg:w-1/2 p-6 gap-[12px] smallBox">
               <div>
                 <MdAccountBalanceWallet
@@ -72,7 +71,6 @@ const AboutEthAi: React.FC = () => {
               </p>
             </div>
 
-            {/* Section 3 */}
             <div className="flex flex-col items-start justify-start lg:w-1/2 p-6 gap-[12px] ">
               <div>
                 <FaScrewdriverWrench

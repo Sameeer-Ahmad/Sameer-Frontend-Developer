@@ -5,11 +5,7 @@ import {
   SimpleGrid,
   Stack,
   VisuallyHidden,
-  Input,
   useColorModeValue,
-  Button,
-  InputGroup,
-  InputRightElement,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { FaInstagram, FaTelegramPlane, FaTwitter } from "react-icons/fa";
@@ -102,20 +98,17 @@ export default function Footer() {
               “Designed for traders of today, just like you.”
             </h1>
             <div className="flex items-center">
-  <div className="relative w-[520px] md:w-[420px] h-[50px] max-w-[520px] border-[1px] border-white rounded-[12px] p-[2px]">
-    <input
-      type="email"
-      placeholder="What’s your work email"
-      className="w-full h-[44px] pl-4 pr-24 rounded-[12px] bg-footerBg text-white focus:bg-whiteAlpha-200 border-none"
-    />
-    <button
-      className="absolute inset-y-0 right-0 md:right-0  h-[42px] px-6 text-white bg-dApp border border-dAppBorder rounded-[12px] hover:bg-navButtonColor hover:text-black hover:font-medium mt-1 mr-1 mb-1" 
-    >
-      Open dApp
-    </button>
-  </div>
-</div>
-
+              <div className="relative w-[520px] md:w-[420px] h-[50px] max-w-[520px] border-[1px] border-white rounded-[12px] p-[2px]">
+                <input
+                  type="email"
+                  placeholder="What’s your work email"
+                  className="w-full h-[44px] pl-4 pr-24 rounded-[12px] bg-footerBg text-white focus:bg-whiteAlpha-200 border-none"
+                />
+                <button className="absolute inset-y-0 right-0 md:right-0  h-[42px] px-6 text-white bg-dApp border border-dAppBorder rounded-[12px] hover:bg-navButtonColor hover:text-black hover:font-medium mt-1 mr-1 mb-1">
+                  Open dApp
+                </button>
+              </div>
+            </div>
           </Stack>
         </SimpleGrid>
       </Container>
