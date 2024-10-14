@@ -39,7 +39,7 @@ const Faq: React.FC = () => {
   ];
 
   return (
-    <Box color={"white"} h={"600px"}>
+    <Box color={"white"} h={"500px"}>
      
       <Flex justify="center" align={{ base: "center", md: "center" }} h="100%" direction={{ base: "column", md: "row" }} >
        
@@ -73,7 +73,7 @@ const Faq: React.FC = () => {
                         {/* Flex container for icon and title */}
                         <Flex align="center" width="100%">
                           {/* Left-aligned icon */}
-                          <Box className="text-navBorder">
+                          <Box className="text-fontColor">
                             {isExpanded ? (
                               <MinusIcon fontSize="12px"  />
                             ) : (
