@@ -1,25 +1,48 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Feature.css";
+import TokenomicBackground from "../assets/video/TokenomicBg.mov";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Tokenomics: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500, 
+      easing: 'ease-in-out',  
+      anchorPlacement: 'top-bottom'
+      
+    });
+  }, []);
   return (
     <>
-      <div className="h-[532px] sm:h-[832px] custom-sm:h-[832px] md:h-[832px] lg:h-[532px] xl:h-[532px] max-h-[832px] mt-[50px] mb-[50px] lg:mb-[0px]">
-        <p className="text-white font-space text-[40px] font-medium text-center ">
+      <div
+        className="relative h-[562px] sm:h-[852px] custom-sm:h-[852px] md:h-[862px] lg:h-[562px] xl:h-[562px] max-h-[842px] mt-[70px]"
+      >
+        <div className="absolute inset-0 h-full w-full">
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src={TokenomicBackground} type="video/mp4" />
+          </video>
+
+          <div className="absolute inset-0 bg-black opacity-70"></div>
+        </div>
+        <h1 className="relative z-20 text-white font-space text-[40px] font-medium text-center mb-8 ">
           Tokenomics
-        </p>
+        </h1>
 
         <div className="flex tokenomicsData justify-between items-center w-full">
           {" "}
-          {/* Flex container with 100% width */}
-          <div className="flex justify-center items-center w-[50%] relative">
-            {/* 50% width for donut chart */}
+          <div  data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" className="flex justify-center items-center w-[50%] relative">
             <svg
               width="300"
               height="300"
               viewBox="0 0 42 42"
               className="block gap-2"
             >
-              {/* Full donut background */}
               <circle
                 className="text-logoColor"
                 stroke="currentColor"
@@ -30,50 +53,46 @@ const Tokenomics: React.FC = () => {
                 cy="21"
               />
 
-              {/* First 76% slice with a gap of 2% */}
               <circle
                 className="text-logoColor"
                 stroke="currentColor"
                 strokeWidth="5"
-                strokeDasharray="76 24" // 76% filled, 24% empty (including gap)
-                strokeDashoffset="10" // Offset to rotate
+                strokeDasharray="76 24"
+                strokeDashoffset="10"
                 fill="transparent"
                 r="15.91549431"
                 cx="21"
                 cy="21"
-                transform="rotate(-90 21 21)" // Start at the top
+                transform="rotate(-90 21 21)"
               />
 
-              {/* Second 10% slice */}
               <circle
                 className="text-donutcolor1"
                 stroke="currentColor"
                 strokeWidth="5"
-                strokeDasharray="10 90" // 10% filled, 90% empty
-                strokeDashoffset="-20" // Adjust to position in bottom-right
+                strokeDasharray="10 90"
+                strokeDashoffset="-20"
                 fill="transparent"
                 r="15.91549431"
                 cx="21"
                 cy="21"
-                transform="rotate(-90 21 21)" // Start at the top
+                transform="rotate(-90 21 21)"
               />
 
-              {/* Third 10% slice */}
               <circle
                 className="text-donutcolor2"
                 stroke="currentColor"
                 strokeWidth="5"
-                strokeDasharray="10 90" // 10% filled, 90% empty
-                strokeDashoffset="-30" // Adjust to position next to second part
+                strokeDasharray="10 90"
+                strokeDashoffset="-30"
                 fill="transparent"
                 r="15.91549431"
                 cx="21"
                 cy="21"
-                transform="rotate(-90 21 21)" // Start at the top
+                transform="rotate(-90 21 21)"
               />
             </svg>
 
-            {/* Lines and labels */}
             <div className="absolute flex flex-col">
               <div className="flex items-center">
                 <div className="w-8 h-0.5 bg-white transform translate-y-2 translate-x-52 md:w-8 lg:w-8 xl:w-8 custom-sm:translate-x-44 sm:translate-x-56 custom-sm:rotate-[25deg]  sm:w-8 custom-sm:w-8" />
@@ -97,7 +116,10 @@ const Tokenomics: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%] flex flex-col items-center justify-center">
+
+
+          <div  data-aos="fade-down"
+        data-aos-anchor-placement="top-bottom" className="w-[50%] flex flex-col items-center justify-center">
             <div className="blockchain  flex w-[80%] md:w-[80%] xl:w-[80%] sm:w-[120%] lg:w-[80%] custom-sm:w-[160%] gap-2 bg-navColor backdrop-blur-[15px] rounded-[20px] p-4 text-white text-[16px] font-space font-normal ">
               <div className="flex flex-col custom-sm:ml-6 custom-sm:mr-0 sm:ml-12 sm:mr-12 lg:ml-12 lg:mr-12 md:ml-12 md:mr-12 ml-12 mr-12 ml-12 mr-12 gap-2">
                 <div>Name</div>

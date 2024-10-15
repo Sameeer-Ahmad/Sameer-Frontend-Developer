@@ -7,7 +7,7 @@ import "./Feature.css";
 const AboutEthAi: React.FC = () => {
   return (
     <>
-      <div className="h-auto pb-[50px] top-[24px] flex flex-col items-center gap-6 mt-[42px]">
+      <div className="h-auto pb-[50px] top-[24px] flex flex-col items-center gap-6 pt-[102px]">
         <h1 className="text-white font-space text-[40px] md:text-[40px] sm:text-[32px] font-medium text-center">
           About EthAi
         </h1>

@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ExploreDapp: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500, 
+      easing: 'ease-in-out',  
+      anchorPlacement: 'top-bottom'
+      
+    });
+  }, []);
   return (
-    <div
+    <div data-aos="zoom-out"
       className="text-white h-[380px] max-h-[380px] w-[80%] m-auto flex flex-col gap-6 justify-center items-center rounded-[20px] mt-[30px]"
       style={{
         boxShadow: "inset 0px 1px 25px 0px rgba(29, 206, 242, 0.25)",
