@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import KickingOff from "../assets/video/KickingOff.mp4";
 import BrightInishgts from "../assets/video/BiggerInsights.mp4";
 import FullPower from "../assets/video/FullPower.mp4";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Roadmap: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500, 
+      easing: 'ease-in-out',  
+      anchorPlacement: 'top-bottom'
+      
+    });
+  }, []);
   return (
     <>
       <div className=" mx-auto p-4 gap-8 text-white flex flex-col ">
-        <div className="flex flex-col md:flex-row w-full gap-8 mb-8">
-          <div className="w-full md:w-[50%] p-4 flex flex-col items-center justify-center gap-6">
+        <h1 className="text-white font-space text-[40px] font-medium text-center mb-8">
+          Roadmap
+        </h1>
+        <div
+          data-aos="zoom-in"
+          className="flex flex-col md:flex-row w-full gap-8 mb-8"
+        >
+          <div
+            data-aos="zoom-in"
+            className="w-full md:w-[50%] p-4 flex flex-col items-center justify-center gap-6"
+          >
             <div className="flex flex-col items-center md:items-start sm:items-start custom-sm:items-start w-full">
               <button className="bg-white text-black w-[71px] h-[28px] rounded-[4px] px-[12px] py-[6px] font-space text-[12px] font-medium mb-4">
                 PHASE 1
@@ -75,7 +94,10 @@ const Roadmap: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[50%] video-section relative">
+          <div
+            data-aos="zoom-in"
+            className="w-full md:w-[50%] video-section relative"
+          >
             <div
               className="absolute inset-0"
               style={{
@@ -104,7 +126,10 @@ const Roadmap: React.FC = () => {
         </div>
 
         <div className="flex flex-col md:flex-row-reverse w-full gap-8 mb-8">
-          <div className="w-full md:w-[50%] p-4 flex flex-col items-center justify-center gap-6">
+          <div
+            data-aos="zoom-in"
+            className="w-full md:w-[50%] p-4 flex flex-col items-center justify-center gap-6"
+          >
             <div className="flex flex-col items-center md:items-start sm:items-start custom-sm:items-start w-full">
               <button className="bg-white text-black w-[71px] h-[28px] rounded-[4px] px-[12px] py-[6px] font-space text-[12px] font-medium mb-4">
                 PHASE 2
@@ -170,7 +195,10 @@ const Roadmap: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[50%] video-section relative">
+          <div
+            data-aos="zoom-in"
+            className="w-full md:w-[50%] video-section relative"
+          >
             <div
               className="absolute inset-0"
               style={{
@@ -199,7 +227,10 @@ const Roadmap: React.FC = () => {
         </div>
 
         <div className="flex flex-col md:flex-row w-full gap-8 mb-8">
-          <div className="w-full md:w-[50%] p-4 flex flex-col items-center justify-center gap-6">
+          <div
+            data-aos="zoom-in"
+            className="w-full md:w-[50%] p-4 flex flex-col items-center justify-center gap-6"
+          >
             <div className="flex flex-col items-center md:items-start sm:items-start custom-sm:items-start w-full">
               <button className="bg-white text-black w-[71px] h-[28px] rounded-[4px] px-[12px] py-[6px] font-space text-[12px] font-medium mb-4">
                 PHASE 3
@@ -265,7 +296,10 @@ const Roadmap: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[50%] video-section relative">
+          <div
+            data-aos="zoom-in"
+            className="w-full md:w-[50%] video-section relative"
+          >
             <div
               className="absolute inset-0"
               style={{
