@@ -4,10 +4,11 @@ import { FaScrewdriverWrench } from "react-icons/fa6";
 import { MdAccountBalanceWallet } from "react-icons/md";
 import { RiRobot2Fill } from "react-icons/ri";
 import "./Feature.css";
+
 const AboutEthAi: React.FC = () => {
   return (
     <>
-      <div className="h-auto pb-[50px] top-[24px] flex flex-col items-center gap-6 pt-[102px]">
+      <div className="h-auto pb-[50px] top-[24px] flex flex-col items-center gap-6 pt-[0px] sm:pt-[100px] custom-sm:pt-[300px]">
         <h1 className="text-white font-space text-[40px] md:text-[40px] sm:text-[32px] font-medium text-center">
           About EthAi
         </h1>

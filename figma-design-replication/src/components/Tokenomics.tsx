@@ -6,17 +6,14 @@ import "aos/dist/aos.css";
 const Tokenomics: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500, 
-      easing: 'ease-in-out',  
-      anchorPlacement: 'top-bottom'
-      
+      duration: 500,
+      easing: "ease-in-out",
+      anchorPlacement: "top-bottom",
     });
   }, []);
   return (
     <>
-      <div
-        className="relative h-[562px] sm:h-[852px] custom-sm:h-[852px] md:h-[862px] lg:h-[562px] xl:h-[562px] max-h-[842px] mt-[70px]"
-      >
+      <div className="relative h-[562px] sm:h-[852px] custom-sm:h-[852px] md:h-[862px] lg:h-[562px] xl:h-[562px] max-h-[842px] mt-[70px] ">
         <div className="absolute inset-0 h-full w-full">
           <video
             autoPlay
@@ -27,7 +24,14 @@ const Tokenomics: React.FC = () => {
             <source src={TokenomicBackground} type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-black opacity-70"></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, #00161D 0%, rgba(0, 22, 29, 0) 50%, #00161D 100%)",
+            }}
+          ></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 mix-blend-multiply"></div>
         </div>
         <h1 className="relative z-20 text-white font-space text-[40px] font-medium text-center mb-8 ">
           Tokenomics
@@ -35,8 +39,11 @@ const Tokenomics: React.FC = () => {
 
         <div className="flex tokenomicsData justify-between items-center w-full">
           {" "}
-          <div  data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom" className="flex justify-center items-center w-[50%] relative">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            className="flex justify-center items-center w-[50%] relative"
+          >
             <svg
               width="300"
               height="300"
@@ -116,10 +123,11 @@ const Tokenomics: React.FC = () => {
               </div>
             </div>
           </div>
-
-
-          <div  data-aos="fade-down"
-        data-aos-anchor-placement="top-bottom" className="w-[50%] flex flex-col items-center justify-center">
+          <div
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            className="w-[50%] flex flex-col items-center justify-center"
+          >
             <div className="blockchain  flex w-[80%] md:w-[80%] xl:w-[80%] sm:w-[120%] lg:w-[80%] custom-sm:w-[160%] gap-2 bg-navColor backdrop-blur-[15px] rounded-[20px] p-4 text-white text-[16px] font-space font-normal ">
               <div className="flex flex-col custom-sm:ml-6 custom-sm:mr-0 sm:ml-12 sm:mr-12 lg:ml-12 lg:mr-12 md:ml-12 md:mr-12 ml-12 mr-12 ml-12 mr-12 gap-2">
                 <div>Name</div>
